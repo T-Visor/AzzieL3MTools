@@ -131,16 +131,6 @@ Modify `config/llmprompts.json` to define:
 - `templates/` - HTML interface templates
 - `static/` - Client-side assets
 
-## Supported Models
-
-The framework supports any model available through Ollama, including:
-- Meta Llama 2/3
-- Mistral
-- Neural Chat
-- And others compatible with Ollama
-
-Cloud models can be specified with `:CLOUD` suffix in the model name.
-
 ## Key Features
 
 - Multi-model evaluation framework
