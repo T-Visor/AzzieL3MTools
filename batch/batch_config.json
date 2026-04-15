@@ -1,13 +1,6 @@
 {
-  "llm": [
-    "llama3.2:3b",
-    "qwen3.5:4b",
-    "granite4:3b"
-  ],
-  "llmsettings": [
-    "Baseline",
-    "Low Temp"
-  ],
+  "llm": ["llama3.2:3b", "qwen3.5:4b", "granite4:3b"],
+  "llmsettings": ["Baseline"],
   "batchrun": [
     {
       "active": "True",

@@ -55,7 +55,14 @@ Batch analysis enables comparing multiple models against standardized test cases
 
 ### Create a Batch Configuration File
 
-Create a JSON file in the root directory with the batch specification:
+
+Create the **batch** directory in the root of the project.
+
+```sh
+mkdir batch
+```
+
+Create a JSON file in the **batch** directory with the batch specification:
 
 ```json
 {
