@@ -1,14 +1,90 @@
 {
-  "llm": ["llama3.2:3b", "qwen3.5:4b", "granite4:3b"],
-  "llmsettings": ["Baseline"],
+  "llm_single": [
+    "gemma3:4b"
+  ],
+  "llm": [
+    "granite4:350m",
+    "granite4:3b",
+    "granite4:1b",
+    "ministral-3:3b",
+    "qwen3:8b",
+    "llama3.2:latest",
+    "gemma3:4b"
+  ],
+  "llm_all": [
+    "all_local"
+  ],
+  "llmsettings_single": [
+    "Baseline"
+  ],
+  "llmsettings": [
+    "Baseline",
+    "Moderate Temperature",
+    "Low Temp",
+    "High Tokens"
+  ],
+  "results": "batchres/LLMTesting_2.json",
+  "savestats": "True",
   "batchrun": [
     {
+      "type": "initialize model",
       "active": "True",
-      "type": "definition",
+      "qryid": "ask",
+      "payload": "what is an airplane"
+    },
+    {
+      "type": "extract related",
+      "active": "True",
+      "qryid": "related_terms",
+      "payload": "computer"
+    },
+    {
+      "type": "definition, multiple word",
+      "active": "True",
       "qryid": "def_simple",
-      "payload": "Why is the sky blue"
+      "payload": "moose\\n rocket\\n explore"
+    },
+    {
+      "type": "categorize, multiple word",
+      "active": "True",
+      "qryid": "cat_animinveg",
+      "payload": "goldfish, computer, boulder"
+    },
+    {
+      "type": "classification",
+      "active": "True",
+      "qryid": "class_milintel",
+      "payload": "The terrorist compound was located in Libya via high resolution K14 satellite imagery at 0300 hrs on May 3, 2022 GMT."
+    },
+    {
+      "type": "extraction of key words",
+      "active": "True",
+      "qryid": "ext_keywords",
+      "payload": "Software engineering is a comprehensive discipline that encompasses a broad range of practices, methodologies, and tools aimed at the efficient and effective conception, design, development, and maintenance of software applications."
+    },
+    {
+      "type": "correlate locations to coordinates",
+      "active": "True",
+      "qryid": "corr_latlong",
+      "payload": "London, New York"
+    },
+    {
+      "type": "correlation sentiment evaluation",
+      "active": "True",
+      "qryid": "eval_sent",
+      "payload": "The bully in the schoolyard attacked three different children."
+    },
+    {
+      "type": "summarize, paragraph",
+      "active": "True",
+      "qryid": "sum_short",
+      "payload": "file:batch/docs/cinderella.txt"
+    },
+    {
+      "type": "short summarize, doc",
+      "active": "True",
+      "qryid": "sum_docs",
+      "payload": "file:batch/docs/missile.txt"
     }
-  ],
-  "savestats": "True",
-  "results": "batchres/batch_results.json"
+  ]
 }
