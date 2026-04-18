@@ -54,13 +54,17 @@ def getllmsetlist():
 
 
 # following provides a dict of named llm setting
-def getllmsettings(sname= "Baseline"):
-    lset= {}
-    lmlist = utils.loadjson("config/llminit.json")["llmsettings"]
+def getllmsettings(sname="Baseline"):
+    lset = {}
+    data = utils.loadjson("config/llminit.json")
+    lmlist = data.get("llmsettings", [])
+
     for i in lmlist:
-        lset = i
-        if i["llmconfig"] == sname: break
-    return lset 
+        if isinstance(i, dict) and i.get("llmconfig") == sname:
+            return i  # Return the specific match immediately
+            
+    # 3. Return an empty dict (or a default) if nothing is found
+    return lset
 
 # following returns a string with currently running LLM
 def getcurrentllm():

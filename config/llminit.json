@@ -1,21 +1,36 @@
 {
+  "llm_single": [
+    "gemma3:4b"
+  ],
   "llm": [
-    "llama3.2:3b",
-    "qwen3.5:4b",
     "granite4:3b"
+  ],
+  "llm_all": [
+    "all_local"
+  ],
+  "llmsettings_single": [
+    "Baseline"
   ],
   "llmsettings": [
     "Baseline",
-    "Low Temp"
+    "Moderate Temperature",
+    "Low Temp",
+    "High Tokens"
   ],
+  "results": "batchres/LLMTesting_turhan.json",
+  "savestats": "True",
   "batchrun": [
     {
+      "type": "initialize model",
       "active": "True",
-      "type": "definition",
-      "qryid": "def_simple",
-      "payload": "Why is the sky blue"
+      "qryid": "ask",
+      "payload": "what is an airplane"
+    },
+    {
+      "type": "extract related",
+      "active": "True",
+      "qryid": "related_terms",
+      "payload": "computer"
     }
-  ],
-  "savestats": "True",
-  "results": "batchres/batch_results.json"
+  ]
 }
