@@ -1,0 +1,80 @@
+[
+  {
+    "platform": {
+      "cpu_name": "",
+      "cpu_cores_physical": 12,
+      "cpu_cores_logical": 16,
+      "cpu_freq_mhz": 3850.0,
+      "ram_total_gb": 15.32,
+      "ram_available_gb": 2.67,
+      "os": "Linux",
+      "os_version": "#1 SMP PREEMPT_DYNAMIC Thu Apr  2 16:55:52 UTC 2026"
+    }
+  },
+  {
+    "instruction_set": {
+      "ask": {
+        "preprompt": {
+          "qryid": "ask",
+          "qrytype": "ask",
+          "qryname": "Ask Question (general query)",
+          "proctype": "doc",
+          "system": {
+            "job": "You are answering questions.",
+            "activity": "Provide an answer to the question. If you do not have an answer, return 'I do not know about this'.  Limit the answer only to the JSON output model.",
+            "output": {
+              "answer": "answer"
+            }
+          }
+        }
+      }
+    }
+  },
+  [
+    {
+      "llm_config": {
+        "model": "granite4:3b",
+        "testrun": "",
+        "format": "gguf",
+        "families": [
+          "granite"
+        ],
+        "quantizationlevel": "Q4_K_M",
+        "digest": "89962fcc75239ac434cdebceb6b7e0669397f92eaef9c487774b718bc36a3e5f",
+        "total_params": "3.4B",
+        "filesize GB": 2.099521385
+      }
+    },
+    {
+      "llm_settings": {
+        "llmconfig": "Baseline",
+        "format": "json",
+        "keep_alive": "5m",
+        "options": {}
+      },
+      "batch_run": [
+        {
+          "run_type": "initialize model",
+          "instructions": "ask",
+          "payload_tokens": 6,
+          "payload_bytes": 21,
+          "results_full": [
+            {
+              "QUERY": "what is an airplane",
+              "RESULTS": {
+                "job": "You are answering questions.",
+                "activity": "Provide an answer to the question. If you do not have an answer, return 'I do not know about this'.  Limit the answer only to the JSON output model.",
+                "output": {
+                  "answer": "An airplane is a powered flying vehicle with fixed wings and capable of atmospheric flight. Airplanes are used for transportation, cargo transport, military purposes, aerial photography, and various other applications."
+                }
+              }
+            }
+          ],
+          "result_tokens": 143,
+          "results_size": 598,
+          "run_proctime": "0:00:24.365769"
+        }
+      ]
+    }
+  ]
+]

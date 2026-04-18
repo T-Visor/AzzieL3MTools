@@ -1,18 +1,21 @@
 {
   "llm": [
-    "glm-4.7:cloud"
+    "granite4:3b"
+  ],
+  "llm_all": [
+    "all_local"
   ],
   "llmsettings": [
-    "Large Tokens"
+    "Baseline"
   ],
-  "results": "batchres/LLMAssessment_turhan.json",
-  "savestats": "False",
+  "results": "batchres/LLMTesting_turhan.json",
+  "savestats": "True",
   "batchrun": [
     {
-      "type": "run LLM analysis",
+      "type": "initialize model",
       "active": "True",
-      "qryid": "analyzeLLMresults",
-      "payload": "file:batchres/LLMTesting_2.json"
+      "qryid": "ask",
+      "payload": "what is an airplane"
     }
   ]
 }
