@@ -1,21 +1,24 @@
 {
   "llm": [
-    "granite4:3b"
+    "granite4:3b",
+    "llama3.2:3b",
+    "qwen3.5:4b",
+    "ministral-3:8b"
   ],
   "llm_all": [
     "all_local"
   ],
   "llmsettings": [
-    "Baseline"
+    "High Tokens"
   ],
   "results": "batchres/LLMTesting_turhan.json",
   "savestats": "True",
   "batchrun": [
     {
-      "type": "initialize model",
+      "type": "extract related",
       "active": "True",
-      "qryid": "ask",
-      "payload": "what is an airplane"
+      "qryid": "related_terms",
+      "payload": "Aragon Divemaster 42 -------------------- Watch Specs Lug Width: 20mm Watch Diameter: 42mm Dial: Sapphire Bezel: Ceramic Current Setup Bracelet: [STAIB 20mm Polished Milanaise Fine Mesh (203094)](https://longislandwatch.com/staib-st-st-2905-20804sbl-mesh-watch-bracelet-st-st-2905-20804sbl/) Status: Purchased & Recommended Research and Alternatives Brand Notes Staib: Widely considered a high-quality brand for mesh bracelets. Crown & Buckle: Noted for good quality NATO straps. Staib SOC 2905: Known as one of their more affordable entries while still being highly recommended. Mesh Bracelet Options Aragon OEM: [20mm Mesh Bracelet](https://www.aragonwatch.com/productp/20smb-bs.htm) Staib 2905: [Polished Mesh](https://longislandwatch.com/staib-st-st-2905-20804sbl-mesh-watch-bracelet-st-st-2905-20804sbl/) Staib 2906: [Good Deal Option](https://longislandwatch.com/staib-st-st-2906-20813sbl-mesh-watch-bracelet-st-st-2906-20813sbl/) Staib 2910: [Thicker Mesh Option](https://longislandwatch.com/staib-st-st-2910-20817sbl-mesh-watch-bracelet-st-st-2910-20817sbl/) (Potential top choice for weight/durability) References Reddit Thread: [Affordable Watches - Mesh Recommendations](https://www.reddit.com/r/Affordablewatches/comments/1pqxpe8/goodmeshbraceletrecomendation/)"
     }
   ]
 }
