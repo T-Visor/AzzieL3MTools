@@ -1,0 +1,251 @@
+[
+  {
+    "platform": {
+      "cpu_name": "",
+      "cpu_cores_physical": 6,
+      "cpu_cores_logical": 12,
+      "cpu_freq_mhz": 3400.0,
+      "ram_total_gb": 15.55,
+      "ram_available_gb": 11.13,
+      "os": "Linux",
+      "os_version": "#1 SMP PREEMPT_DYNAMIC Thu Mar 19 21:34:56 UTC 2026"
+    }
+  },
+  {
+    "instruction_set": {
+      "related_terms": {
+        "preprompt": {
+          "qryid": "related_terms",
+          "qrytype": "list",
+          "qryname": "Provide a list of related terms.",
+          "proctype": "word",
+          "system": {
+            "job": "You are creating lists of related terms.",
+            "activity": "Provide a list of 10 unique single-keywords related to but NOT included in the query.  Limit the response to the list in the JSON output model.",
+            "output": {
+              "term": [
+                "related terms"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  [
+    {
+      "llm_config": {
+        "model": "llama3.2:3b",
+        "testrun": "",
+        "format": "gguf",
+        "families": [
+          "llama"
+        ],
+        "quantizationlevel": "Q4_K_M",
+        "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+        "total_params": "3.2B",
+        "filesize GB": 2.019393189
+      }
+    },
+    {
+      "llm_settings": {
+        "llmconfig": "High Tokens",
+        "format": "json",
+        "keep_alive": "5m",
+        "options": {}
+      },
+      "batch_run": [
+        {
+          "run_type": "list",
+          "instructions": "related_terms",
+          "payload_tokens": 20,
+          "payload_bytes": 83,
+          "results_full": [
+            {
+              "QUERY": "## Subscriptions * Amazon * Spotify * HBO Max * HuluPlus * Netflix * AAA * Costco",
+              "RESULTS": {
+                "term": [
+                  "streaming",
+                  "membership",
+                  "package",
+                  "subscription",
+                  "rewards",
+                  "insurance",
+                  "membership",
+                  "clubs",
+                  "benefits",
+                  "privileges"
+                ]
+              }
+            }
+          ],
+          "result_tokens": 114,
+          "results_size": 470,
+          "run_proctime": "0:00:02.445918"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "llm_config": {
+        "model": "gemma4:e4b",
+        "testrun": "",
+        "format": "gguf",
+        "families": [
+          "gemma4"
+        ],
+        "quantizationlevel": "Q4_K_M",
+        "digest": "c6eb396dbd5992bbe3f5cdb947e8bbc0ee413d7c17e2beaae69f5d569cf982eb",
+        "total_params": "8.0B",
+        "filesize GB": 9.608350718
+      }
+    },
+    {
+      "llm_settings": {
+        "llmconfig": "High Tokens",
+        "format": "json",
+        "keep_alive": "5m",
+        "options": {}
+      },
+      "batch_run": [
+        {
+          "run_type": "list",
+          "instructions": "related_terms",
+          "payload_tokens": 20,
+          "payload_bytes": 83,
+          "results_full": [
+            {
+              "QUERY": "## Subscriptions * Amazon * Spotify * HBO Max * HuluPlus * Netflix * AAA * Costco",
+              "RESULTS": {
+                "term": [
+                  "streaming",
+                  "membership",
+                  "retail",
+                  "entertainment",
+                  "subscription",
+                  "service",
+                  "media",
+                  "content",
+                  "subscriptionbox",
+                  "deal"
+                ]
+              }
+            }
+          ],
+          "result_tokens": 114,
+          "results_size": 471,
+          "run_proctime": "0:00:25.465244"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "llm_config": {
+        "model": "hermes3:latest",
+        "testrun": "",
+        "format": "gguf",
+        "families": [
+          "llama"
+        ],
+        "quantizationlevel": "Q4_0",
+        "digest": "4f6b83f30b62bc3d0cf9be09266db222805ee815c8fd7d8b38f863f655be78b7",
+        "total_params": "8.0B",
+        "filesize GB": 4.661227243
+      }
+    },
+    {
+      "llm_settings": {
+        "llmconfig": "High Tokens",
+        "format": "json",
+        "keep_alive": "5m",
+        "options": {}
+      },
+      "batch_run": [
+        {
+          "run_type": "list",
+          "instructions": "related_terms",
+          "payload_tokens": 20,
+          "payload_bytes": 83,
+          "results_full": [
+            {
+              "QUERY": "## Subscriptions * Amazon * Spotify * HBO Max * HuluPlus * Netflix * AAA * Costco",
+              "RESULTS": {
+                "term": [
+                  "subscriptions",
+                  "streaming services",
+                  "entertainment",
+                  "retail memberships",
+                  "online shopping",
+                  "digital content",
+                  "paid services",
+                  "video streaming",
+                  "music streaming",
+                  "exclusive offers"
+                ]
+              }
+            }
+          ],
+          "result_tokens": 122,
+          "results_size": 534,
+          "run_proctime": "0:00:04.266722"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "llm_config": {
+        "model": "ministral-3:8b",
+        "testrun": "",
+        "format": "gguf",
+        "families": [
+          "mistral3"
+        ],
+        "quantizationlevel": "Q4_K_M",
+        "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+        "total_params": "8.9B",
+        "filesize GB": 6.022236616
+      }
+    },
+    {
+      "llm_settings": {
+        "llmconfig": "High Tokens",
+        "format": "json",
+        "keep_alive": "5m",
+        "options": {}
+      },
+      "batch_run": [
+        {
+          "run_type": "list",
+          "instructions": "related_terms",
+          "payload_tokens": 20,
+          "payload_bytes": 83,
+          "results_full": [
+            {
+              "QUERY": "## Subscriptions * Amazon * Spotify * HBO Max * HuluPlus * Netflix * AAA * Costco",
+              "RESULTS": {
+                "term": [
+                  "Roku",
+                  "AppleTV+",
+                  "Disney+",
+                  "Peacock",
+                  "Crunchyroll",
+                  "Prime Video",
+                  "WarnerMAX",
+                  "Sling TV",
+                  "YouTube Premium",
+                  "Tubi"
+                ]
+              }
+            }
+          ],
+          "result_tokens": 117,
+          "results_size": 467,
+          "run_proctime": "0:00:04.206753"
+        }
+      ]
+    }
+  ]
+]

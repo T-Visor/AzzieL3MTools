@@ -22,7 +22,7 @@
       "proctype": "word",
       "system": {
         "job": "You are creating lists of related terms.",
-        "activity": "Provide a list of 10 words or short phrases related to the query.  Limit the response to the list in the JSON output model.",
+        "activity": "Provide a list of 10 unique single-keywords related to but NOT included in the query.  Limit the response to the list in the JSON output model.",
         "output": {
           "term": [
             "related terms"
