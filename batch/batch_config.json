@@ -1,15 +1,14 @@
 {
   "llm": [
     "llama3.2:3b",
-    "gemma4:e4b",
-    "hermes3:latest",
-    "ministral-3:8b"
+    "qwen3.5:4b",
+    "granite4.1:3b"
   ],
   "llm_all": [
     "all_local"
   ],
   "llmsettings": [
-    "High Tokens"
+    "Baseline"
   ],
   "results": "batchres/LLMTesting_t-visor.json",
   "savestats": "True",
@@ -19,6 +18,12 @@
       "active": "True",
       "qryid": "related_terms",
       "payload": "## Subscriptions * Amazon * Spotify * HBO Max * HuluPlus * Netflix * AAA * Costco"
+    },
+    {
+      "type": "list",
+      "active": "True",
+      "qryid": "related_terms",
+      "payload": "## Feedback from Note-a-log Brief There are a number of users who use Obsidian, I need to find a way to get peoples' existing notes into Note-a-log. Maybe a script which acts as an importer?"
     }
   ]
 }
